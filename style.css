@@ -288,7 +288,10 @@ ul li a {
 
 .change__habits {
   background-color: #111;
-  padding: 2rem 10%;
+}
+
+.container {
+  margin: 2rem 10%;
 }
 
 .change__habits h1 {
@@ -357,4 +360,14 @@ ul li a {
     margin-bottom: 2.5rem;
 
   }
+}
+
+/* ! style rule for run an extra mile section and media queries */
+
+.run__extra {
+  background: #111;
+}
+
+.run__container {
+  margin: 2.5rem 10%;
 }
