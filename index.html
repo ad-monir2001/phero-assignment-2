@@ -99,6 +99,72 @@
         </section>
 
         <!-- Run extra mile section end -->
+
+        <!-- BMI Calculator section start here -->
+        <section id="bmi__calculator">
+            <h1 class="bmi__heading">BMI Calculator</h1>
+            <p class="bmi__description">BMI means body mass index. It is a parameter of your body to know are you fit or not. <br> So it is important to know your BMI.</p>
+            <div class="bmi__container">
+                <div class="bmi__chart">
+                    <h2>BMI Calculator Chart</h2>
+                    <table>
+                        <th>
+                            BMI
+                            
+                        </th>
+                        <th>Weight Status</th>
+                        <tr>
+                            <td>Below 18.5</td>
+                            <td>Underweight</td>
+                        </tr>
+                        <tr>
+                            <td>18.5 - 24.9</td>
+                            <td>Healthy</td>
+                        </tr>
+                        <tr>
+                            <td>25.0 - 29.9</td>
+                            <td>Overweight</td>
+                        </tr>
+                        <tr>
+                            <td>30.0 - and Above</td>
+                            <td>Obese</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="calculator">
+                    <h2>Calculate your BMI</h2>
+                    <p id="calDesc">Provide Your valid Height, Weight, Age and Sex here. Then you will find your BMI. <br> Match your BMI with left chart.</p>
+                    <form action="">
+                        <div id="input__field">
+                            <label for="height">
+                                <input type="number" name="height" id="height" placeholder="Height/cm">
+                            </label>
+                            <label for="weight">
+                                <input type="number" name="weight" id="weight" placeholder="Weight/kg">
+                            </label>
+                            <label for="age">
+                                <input type="number" name="age" id="age" placeholder="Age">
+                            </label>
+                            <select name="sex" id="sex">
+                                <option value="sex">Sex</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                            <select name="activity" id="activity">
+                                <option value="Select an activity factor">
+                                    Select an activity factor
+                                </option>
+                                <option value="Farmer">Farmer</option>
+                                <option value="Officer">Officer</option>
+                                <option value="day labour">Day labour</option>
+                            </select>
+                        </div>
+                        <button type="submit" id="calculator__btn">Calculate</button>
+                    </form>
+                </div>
+            </div>
+        </section>        
+        <!-- BMI Calculator section end here -->
     </main>
     <footer></footer>
 </body>

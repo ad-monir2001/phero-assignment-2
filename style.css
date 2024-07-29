@@ -287,7 +287,7 @@ ul li a {
 /* ! style rule for Change habit section and media query */
 
 .change__habits {
-  background-color: #111;
+  background: #000;
 }
 
 .container {
@@ -367,14 +367,13 @@ ul li a {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.3px;
-
   }
 }
 
 /* ! style rule for run an extra mile section and media queries */
 
 .run__extra {
-  background: #111;
+  background: #000;
   padding: 2.5rem 10%;
 }
 
@@ -447,6 +446,9 @@ ul li a {
     gap: 2rem;
   }
 
+  .run__extra {
+    padding: 2.5rem 5%;
+  }
   .run__texts h1 {
     font-size: 2rem;
     line-height: 40px;
@@ -462,5 +464,166 @@ ul li a {
 
   .image__container {
     width: 400px;
+  }
+}
+
+/* ! style rule for BMI Calculator section and media queries */
+
+#bmi__calculator {
+  background: #000;
+  padding: 2.5rem 0;
+}
+
+.bmi__heading {
+  color: #fff;
+  font-family: Inter;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120%;
+  text-align: center;
+}
+
+.bmi__description {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.bmi__container {
+  background: #222;
+  padding: 2.5rem 10%;
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  margin-top: 3.5rem;
+}
+
+.bmi__container h2 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120%;
+}
+
+table {
+  margin-top: 3rem;
+}
+
+table,
+th,
+td {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-collapse: collapse;
+}
+
+table {
+  width: 150%;
+}
+
+th {
+  color: #fff;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  padding: 0.5rem;
+  text-align: start;
+}
+
+td {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  padding: 0.5rem;
+}
+
+#calDesc {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 0.95rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; 
+  letter-spacing: 0.3px;
+  margin: 1rem 0;
+}
+
+input,
+select {
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px 40px 12px 20px;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  width: 100%;
+}
+
+option {
+  color: rgba(255, 255, 255, .6);
+  background: #000;
+}
+
+#calculator__btn {
+  border-radius: 42px;
+  background: #e6533c;
+  padding: 16px 40px; color: #FFF;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px; 
+  border: none;
+  cursor: pointer;
+}
+
+#input__field {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 1.5rem 0;
+}
+
+#activity {
+  grid-column: span 2;
+}
+
+@media screen  and (max-width: 576px) {
+  .bmi__heading {
+    font-size: 2rem;
+    text-align: start;
+    margin-left: 5%;
+  }
+
+  .bmi__description {
+    width: 365px;
+    margin-left: 5%;
+    text-align: start;
+  }
+
+  .bmi__container {
+    flex-direction: column;
+    padding: 2.5rem 5%;
+  }
+
+  table {
+    width: 90%;
   }
 }
