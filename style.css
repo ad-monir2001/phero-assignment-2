@@ -556,7 +556,7 @@ td {
   font-size: 0.95rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; 
+  line-height: 24px;
   letter-spacing: 0.3px;
   margin: 1rem 0;
 }
@@ -577,19 +577,20 @@ select {
 }
 
 option {
-  color: rgba(255, 255, 255, .6);
+  color: rgba(255, 255, 255, 0.6);
   background: #000;
 }
 
 #calculator__btn {
   border-radius: 42px;
   background: #e6533c;
-  padding: 16px 40px; color: #FFF;
+  padding: 16px 40px;
+  color: #fff;
   font-family: Inter;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  line-height: 22px; 
+  line-height: 22px;
   border: none;
   cursor: pointer;
 }
@@ -605,7 +606,7 @@ option {
   grid-column: span 2;
 }
 
-@media screen  and (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .bmi__heading {
     font-size: 2rem;
     text-align: start;
@@ -625,5 +626,169 @@ option {
 
   table {
     width: 90%;
+  }
+}
+
+/* ! style rule for meet our team section and media queries */
+
+#meet__team {
+  background: #000;
+  padding: 2rem 10%;
+}
+
+.team__heading {
+  color: #fff;
+  font-family: Inter;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120%;
+  text-align: center;
+}
+
+.team__description {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.3px;
+  margin: 1rem 0 3rem;
+}
+
+#team__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.team__member h2 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120%; /* 24px */
+}
+
+.team__member p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 0.95rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  margin: 0.3rem;
+}
+
+.team__member {
+  border-radius: 18px;
+  height: 400px;
+  display: flex;
+  align-items: end;
+  padding: 1.2rem;
+}
+
+.bell {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url('images/trainer1.png') lightgray 50% / cover no-repeat;
+}
+
+.williamson {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url('images/trainer2.png') lightgray 50% / cover no-repeat;
+}
+
+.steward {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url('images/trainer3.png') lightgray 50% / cover no-repeat;
+}
+
+.russell {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url('images/trainer4.png') lightgray 50% / cover no-repeat;
+}
+.cody {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url('images/trainer5.png') lightgray 50% / cover no-repeat;
+}
+.webb {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url('images/trainer6.png') lightgray 50% / cover no-repeat;
+}
+
+@media screen and (max-width: 576px) {
+  #meet__team {
+    padding: 1.5rem 5%;
+  }
+
+  .team__heading {
+    font-size: 2rem;
+  }
+
+  .team__description {
+    font-size: 0.9rem;
+    width: 360px;
+    margin: 1.5rem auto;
+  }
+
+  #team__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .team__member {
+    margin-top: 1rem;
+    height: 400px;
+  }
+
+  .williamson {
+    order: 1;
+  }
+
+  .cody {
+    order: 2;
+  }
+
+  .steward {
+    order: 3;
+  }
+
+  .webb {
+    order: 4;
+  }
+
+  .bell,
+  .russell {
+    display: none;
   }
 }
