@@ -792,3 +792,98 @@ option {
     display: none;
   }
 }
+
+/* ! style rule for footer section and media queries */
+
+footer {
+  background: rgb(32, 32, 32);
+  padding: 3rem 10% 1rem;
+}
+
+#footer__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 4.5rem;
+}
+
+.sologan {
+  grid-column: span 2;
+}
+
+.sologan h1 {
+  color: #e6533c;
+  font-family: Inter;
+  font-size: 4rem;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 120%;
+}
+
+.sologan p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  max-width: 450px;
+  margin-top: 1.5rem;
+}
+
+.reach__us h2,
+.explore h2 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2.2rem;
+}
+
+.links a {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  text-decoration: none;
+}
+
+hr {
+  border: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+#copy__right {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  margin: 2rem auto;
+}
+
+@media screen and (max-width: 576px) {
+  #footer__container {
+    display: block;
+  }
+
+  footer {
+    padding: 3rem 5% 1rem;
+  }
+
+  .reach__us {
+    margin: 2rem 0;
+  }
+}
