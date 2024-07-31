@@ -467,6 +467,122 @@ ul li a {
   }
 }
 
+/* ! style rule for Training and exercises section and media queries */
+
+#training {
+  background: #000;
+  padding: 3rem 10%;
+}
+
+#training__heading {
+  color: #fff;
+  font-family: Inter;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120%;
+}
+
+#training__description {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  margin-top: 0.5rem;
+}
+
+.training__container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 3rem 0;
+  border-radius: 8px;
+}
+
+.training__container h3 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 1rem;
+}
+
+.exercise-1 {
+  grid-column: span 2;
+  height: 281px;
+  border-start-start-radius: 8px;
+  background: linear-gradient(
+      0deg,
+      rgba(6, 255, 210, 0.5) 0%,
+      rgba(6, 255, 210, 0.5) 100%
+    ),
+    url('images/exercise1.jpg') lightgray 50% / cover no-repeat;
+}
+
+.exercise-2 {
+  grid-column: span 5;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 0, 0, 0.3) 0%,
+      rgba(255, 0, 0, 0.3) 100%
+    ),
+    url(images/exercise2.png) lightgray -0.336px 0px / 100.125% 111.811% no-repeat;
+}
+
+.exercise-3 {
+  grid-column: span 3;
+  border-top-right-radius: 8px;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url(images/exercise3.png) lightgray 50% / cover no-repeat;
+}
+
+.exercise-4 {
+  grid-column: span 4;
+  border-bottom-left-radius: 8px;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url(images/exercise4.png) lightgray 50% / cover no-repeat;
+}
+
+.exercise-5 {
+  grid-column: span 2;
+  background: linear-gradient(
+      0deg,
+      rgba(66, 255, 0, 0.3) 0%,
+      rgba(66, 255, 0, 0.3) 100%
+    ),
+    url(images/exercise5.jpg) lightgray 50% / cover no-repeat;
+}
+
+.exercise-6 {
+  grid-column: span 4;
+  border-bottom-right-radius: 8px;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 71, 255, 0.3) 0%,
+      rgba(0, 71, 255, 0.3) 100%
+    ),
+    url(images/exercise6.jpg) lightgray 50% / cover no-repeat;
+}
+
+@media screen and (max-width: 576px) {
+  #training{
+    display: none;
+  }
+}
+
 /* ! style rule for BMI Calculator section and media queries */
 
 #bmi__calculator {
